@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors Tutorial</title>
+    <link
+      rel="stylesheet"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    />
+
+    <title>Rock Paper Scissors Game</title>
 
     <style>
       body {
@@ -12,7 +19,8 @@
       }
       h1 {
         margin-top: 20px;
-        color: red;
+        color: black;
+        font-weight: 700;
       }
       .options {
         margin-top: 30px;
@@ -22,6 +30,14 @@
         padding: 10px 20px;
         font-size: 16px;
         cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #2ecc71;
+        color: white;
+        transition: background-color 0.3s ease-in-out;
+      }
+      .options button:hover {
+        background-color: #27ae60;
       }
       .result {
         margin-top: 30px;
@@ -31,9 +47,14 @@
         width: 500px;
         margin: 50px auto;
         padding: 20px;
-        border: 1px solid #ccc;
         border-radius: 10px;
-        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(135deg, #8e44ad, #3498db);
+        color: white;
+        transition: transform 0.3s ease-in-out;
+      }
+      .card:hover {
+        transform: scale(1.01);
       }
     </style>
   </head>
@@ -41,15 +62,18 @@
   <body>
     <div class="card">
       <h1>Rock Paper Scissors</h1>
+      <i class="fa fa-hand-rock-o" aria-hidden="true"  style="font-size:60px;color:lightblue;text-shadow:2px 2px 4px #000000;"> </i></i>
+      <i class="fa fa-hand-paper-o" aria-hidden="true" style="font-size:60px;color:lightblue;text-shadow:2px 2px 4px #000000;"> </i>
+      <i class="fa fa-hand-scissors-o" aria-hidden="true" style="font-size:60px;color:lightblue;text-shadow:2px 2px 4px #000000;"> </i>
 
       <h2>Computer Choice: <span id="computer-choice"></span></h2>
       <h2>User Choice: <span id="user-choice"></span></h2>
       <h2>Result: <span id="result"></span></h2>
 
       <div class="options">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
+        <button id="Rock">Rock</button>
+        <button id="Paper">Paper</button>
+        <button id="Scissors">Scissors</button>
       </div>
     </div>
 
