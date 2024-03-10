@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Tutorial</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        margin-top: 20px;
+        color: red;
+      }
+      .options {
+        margin-top: 30px;
+      }
+      .options button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .result {
+        margin-top: 30px;
+        font-size: 20px;
+      }
+      .card {
+        width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <h1>Rock Paper Scissors</h1>
+
+      <h2>Computer Choice: <span id="computer-choice"></span></h2>
+      <h2>User Choice: <span id="user-choice"></span></h2>
+      <h2>Result: <span id="result"></span></h2>
+
+      <div class="options">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+      </div>
+    </div>
+
+    <script src="app.js" charset="UTF-8"></script>
+  </body>
+</html>
