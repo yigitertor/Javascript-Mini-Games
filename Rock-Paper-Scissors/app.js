@@ -29,22 +29,6 @@ function generateComputerChoice() {
   computerChoiceDisplay.innerHTML = computerChoice;
 }
 
-/*function playRound(userChoice, computerChoice) {
-  if (userChoice === computerChoice) {
-    result = "It's a tie!";
-  } else if (
-    (userChoice === "Rock" && computerChoice === "Scissors") ||
-    (userChoice === "Paper" && computerChoice === "Rock") ||
-    (userChoice === "Scissors" && computerChoice === "Paper")
-  ) {
-    result = `You win! ${userChoice} beats ${computerChoice}.`;
-  } else {
-    result = `You lose! ${computerChoice} beats ${userChoice}.`;
-  }
-  resultDisplay.innerHTML = result;
-}
-*/
-
 function getResult() {
   if (computerChoice === userChoice) {
     result = "🤝 It's a tie!";
