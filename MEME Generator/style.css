@@ -6,28 +6,44 @@
 .meme-generator img {
   height: 430px;
   object-fit: cover;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .meme-generator .generate-meme-btn {
-  padding: 8px 20px;
-  border: none;
-  border-left: 4px solid #222;
-  border-right: 4px solid #222;
-  border-radius: 10px;
-  margin: 24px 0px;
+  padding: 15px 30px;
   font-size: 20px;
-  color: #f64d4d;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
   cursor: pointer;
-  transition: all 400ms ease;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .meme-generator .generate-meme-btn:hover {
-  padding: 8px 36px;
-  border-left: 8px solid #222;
-  border-right: 8px solid #222;
-  letter-spacing: 3px;
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+.meme-generator .generate-meme-btn:active {
+  transform: scale(0.95);
 }
 
 .meme-generator .meme-author {
   margin: 8px;
+  color: #666;
+  font-style: italic;
+}
+
+.meme-container {
+  background-image: url("https://i.imgflip.com/56k6b5.png?a474696");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
